@@ -1,0 +1,45 @@
+{
+  "name": "react-sca",
+  "version": "1.0.0",
+  "description": "react source code analysis",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "cm": "cz",
+    "release": "standard-version",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npm run cz --hook || true"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huqiang-nj/react-sca.git"
+  },
+  "keywords": [
+    "react",
+    "frontend",
+    "souce-code"
+  ],
+  "author": "huqiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huqiang-nj/react-sca/issues"
+  },
+  "homepage": "https://github.com/huqiang-nj/react-sca#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
